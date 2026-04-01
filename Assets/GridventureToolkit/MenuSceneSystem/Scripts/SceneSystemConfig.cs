@@ -1,6 +1,6 @@
 /*
 * SceneSystemConfig.cs
-* Adventure Toolkit - Scene Configuration
+* Gridventure Toolkit - Scene Configuration
 * 
 * Author: Lizzie Perez
 * Description:
@@ -9,7 +9,7 @@
 */
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SceneSystemConfig", menuName = "Adventure Toolkit/Scene System Config")]
+[CreateAssetMenu(fileName = "SceneSystemConfig", menuName = "Gridventure Toolkit/Scene System Config")]
 public class SceneSystemConfig : ScriptableObject
 {
     [Header("Scene Names")]

@@ -1,6 +1,6 @@
 /*
 * PauseMenuSystem.cs
-* Adventure Toolkit - Pause Menu System
+* Gridventure Toolkit - Pause Menu System
 * Version: 1.0
 * 
 * Author: Lizzie Perez

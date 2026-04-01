@@ -1,6 +1,6 @@
 /*
 * MenuSceneSystem.cs
-* Adventure Toolkit - Menu & Scene System
+* Gridventure Toolkit - Menu & Scene System
 * Version: 1.0
 * 
 * Author: Lizzie Perez

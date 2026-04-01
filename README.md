@@ -1,8 +1,8 @@
-# Adventure Toolkit: Menu & Scene System (Unity C#)
+# Gridventure Toolkit: Menu & Scene System (Unity C#)
 
 A reusable, adventure game–style menu and scene management system built in Unity using C#.
 
-This project is part of the **Adventure Toolkit series**, focused on creating modular, beginner-friendly systems that can be easily integrated into Unity projects.
+This project is part of the **Gridventure Toolkit series**, focused on creating modular, beginner-friendly systems that can be easily integrated into Unity projects.
 
 🚧 **Status: In Development (V1 Planning)**
 
@@ -63,7 +63,7 @@ The project will include:
 ## Project Structure (Planned)
 
 ```
-Assets/AdventureToolkit/MenuSceneSystem/
+Assets/GridventureToolkit/MenuSceneSystem/
 ├── Scripts/
 ├── Prefabs/
 ├── Scenes/
@@ -76,7 +76,7 @@ Assets/AdventureToolkit/MenuSceneSystem/
 * Clean separation of UI and logic
 * Minimal setup required
 * Modular and reusable across projects
-* Consistent with other Adventure Toolkit systems
+* Consistent with other Gridventure Toolkit systems
 
 ## What This System Will Demonstrate
 
@@ -95,7 +95,7 @@ Assets/AdventureToolkit/MenuSceneSystem/
 
 ## Additional Notes
 
-This system is intended to pair with other modules in the Adventure Toolkit series, including:
+This system is intended to pair with other modules in the Gridventure Toolkit series, including:
 
 * Top-Down Movement System
 * Future interaction and gameplay systems
