@@ -106,7 +106,6 @@ Assets/GridventureToolkit/
 ├── MenuSceneSystem/
 │   ├── Scripts/
 │   ├── Prefabs/
-│   ├── Scenes/
 │   └── Fonts/
 ├── Demo/
 │   ├── Prefabs/
