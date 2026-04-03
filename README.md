@@ -6,6 +6,8 @@ This project is part of the **Gridventure Toolkit series**, focused on creating 
 
 **Current Version**: v1.0
 
+Demo Video: [https://youtu.be/lWFx60s125k](https://youtu.be/lWFx60s125k)
+
 ## Overview
 
 This system gives you a simple foundation for:
