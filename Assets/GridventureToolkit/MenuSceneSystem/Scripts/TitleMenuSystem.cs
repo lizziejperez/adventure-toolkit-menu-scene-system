@@ -1,6 +1,6 @@
 /*
-* MenuSceneSystem.cs
-* Gridventure Toolkit - Menu & Scene System
+* TitleMenuSystem.cs
+* Gridventure Toolkit - Title Menu System
 * Version: 2.0
 * Author: Lizzie Perez
 */
@@ -10,14 +10,14 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Handles simple scene transitions for a title/menu scene.
+/// Handles simple scene transitions for a title menu scene.
 /// Supports starting the game and quitting the application.
 /// </summary>
 /// <remarks>
 /// Requires PlayerInput component
 /// </remarks>
 [RequireComponent(typeof(PlayerInput))]
-public class MenuSceneSystem : MonoBehaviour
+public class TitleMenuSystem : MonoBehaviour
 {
     [Header("Title Menu Settings")]
     [SerializeField] private SceneSystemConfig config;
