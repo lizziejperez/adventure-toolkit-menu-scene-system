@@ -10,16 +10,24 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Handles simple scene transitions for a title menu scene.
-/// Supports starting the game and quitting the application.
+/// Controls title menu input for starting the game or quitting the application.
 /// </summary>
 /// <remarks>
-/// Requires PlayerInput component
+/// Attach this component to a GameObject in the title scene.
+/// Requires a PlayerInput component on the same GameObject.
+/// Expects the assigned Input Actions asset to contain:
+/// 1. Confirm - used to load the gameplay scene.
+/// 2. Cancel - used to quit the application.
+/// Scene names are read from the assigned SceneSystemConfig.
 /// </remarks>
 [RequireComponent(typeof(PlayerInput))]
 public class TitleMenuSystem : MonoBehaviour
 {
     [Header("Title Menu Settings")]
+
+    /// <summary>
+    /// Shared configuration asset containing scene names and debug settings.
+    /// </summary>
     [SerializeField] private SceneSystemConfig config;
 
     private PlayerInput menuInput;

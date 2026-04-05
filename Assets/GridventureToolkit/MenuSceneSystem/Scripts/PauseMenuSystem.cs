@@ -10,16 +10,31 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Handles simple scene transitions and pause toggle for a gameplay scene.
+/// Handles pause menu behavior during gameplay, including pausing, resuming,
+/// displaying a pause panel, and returning to the title scene.
 /// </summary>
 /// <remarks>
-/// Requires PlayerInput component and a pause panel
+/// Attach this component to a GameObject in the gameplay scene.
+/// Requires a PlayerInput component on the same GameObject.
+/// Expects the assigned Input Actions asset to contain:
+/// 1. Confirm - toggles the pause state on and off.
+/// 2. Cancel - returns to the title scene while paused.
+/// Also requires a pause panel GameObject that can be enabled and disabled to visually indicate the pause state.
 /// </remarks>
 [RequireComponent(typeof(PlayerInput))]
 public class PauseMenuSystem : MonoBehaviour
 {
     [Header("Pause Menu Settings")]
+
+    /// <summary>
+    /// Shared configuration asset containing scene names and debug settings.
+    /// </summary>
     [SerializeField] private SceneSystemConfig config;
+
+    /// <summary>
+    /// UI panel shown while the game is paused.
+    /// This object is enabled when paused and disabled when gameplay resumes.
+    /// </summary>
     [SerializeField] private GameObject pausePanel;
 
     private bool gameIsPaused;
@@ -39,6 +54,7 @@ public class PauseMenuSystem : MonoBehaviour
     {
         gameIsPaused = false;
         cancelAction.started += TogglePause;
+        pausePanel.SetActive(false); // ensure pause panel is not active
     }
 
     // Helper methods for Player Input
@@ -52,7 +68,7 @@ public class PauseMenuSystem : MonoBehaviour
 
         if (gameIsPaused)
         {
-            pausePanel.SetActive(false); // Disable the Pause Panel
+            pausePanel.SetActive(false); // Disable the pause panel
             Time.timeScale = 1.0f; // Un-pause game time            
             confirmAction.started -= ReturnToTitle; // Update input functionality
             gameIsPaused = false; // update flag
