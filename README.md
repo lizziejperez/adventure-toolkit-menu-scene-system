@@ -2,7 +2,7 @@
 
 **Current Version:** v2.0
 
-<!-- Demo Video: -->
+Demo Video: [https://youtu.be/wrqU18o8EqI](https://youtu.be/wrqU18o8EqI)
 
 A reusable, modular menu and scene management system built with Unity’s **New Input System**, designed for clarity, flexibility, and easy integration.
 
